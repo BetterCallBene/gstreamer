@@ -1,0 +1,10 @@
+FROM registry.fedoraproject.org/fedora-toolbox:34
+
+ENV GIT_BRANCH=main
+ENV GIT_URL=https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+RUN mkdir -p /workspace && cd /workspace &&  git clone --branch main https://gitlab.freedesktop.org/gstreamer/gstreamer.git && cd gstreamer && source ci/docker/fedora/prepare.sh && rm -rf /workspace
+
+
+ENV RUSTUP_HOME="/usr/local/rustup"
+ENV CARGO_HOME="/usr/local/cargo"
+ENV PATH="/usr/local/cargo/bin:$PATH"

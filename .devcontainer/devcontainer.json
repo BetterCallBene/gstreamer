@@ -1,0 +1,12 @@
+{
+  "name" : "gstreamer-env",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "${localWorkspaceFolder}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["serayuzgur.crates", "rust-lang.rust-analyzer", "tamasfe.even-better-toml", "ms-azuretools.vscode-docker", "GitHub.copilot"]
+    }
+  }
+}
