@@ -555,3 +555,11 @@ gst-launch-1.0.exe videotestsrc ! glimagesink
 ```
 
 [binfmt]: http://man7.org/linux/man-pages/man5/binfmt.d.5.html
+
+
+## Start webrtc with v4l2
+
+  ```bash
+  gst-launch-1.0 webrtcsink name=ws meta="meta,name=gst-stream" v4l2src device=/dev/video0 !  ws.
+  ```
+

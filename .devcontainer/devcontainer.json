@@ -1,12 +1,13 @@
 {
   "name" : "gstreamer-env",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "${localWorkspaceFolder}"
-  },
+  "image": "fedora-gstreamer:34",
   "customizations": {
     "vscode": {
       "extensions": ["serayuzgur.crates", "rust-lang.rust-analyzer", "tamasfe.even-better-toml", "ms-azuretools.vscode-docker", "GitHub.copilot"]
     }
-  }
+  },
+
+  "runArgs": [
+    "--device=/dev/video0:/dev/video0"
+  ]
 }
