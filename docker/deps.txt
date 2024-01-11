@@ -82,10 +82,19 @@ python3-pip
 python3-wheel
 qconf
 qemu-system-x86
+qt5-linguist
+qt5-qtbase-devel
+qt5-qtbase-private-devel
+qt5-qtdeclarative-devel
+qt5-qtquickcontrols2-devel
+qt5-qttools-common
+qt5-qtwayland-devel
+qt5-qtx11extras-devel
 redhat-rpm-config
 sbc-devel
 SDL2-devel
 toolbox-experience
+valgrind
 vulkan-devel
 vulkan-loader
 x264
@@ -94,4 +103,5 @@ x265
 x264-devel
 xorg-x11-server-utils
 xorg-x11-server-Xvfb
+libmpeg2
 xset
